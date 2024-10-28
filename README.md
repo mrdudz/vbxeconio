@@ -4,6 +4,10 @@
 
 A replacement conio implementation for VBXE 80-column.  When included with your program, the same conio functions will write to the VBXE 80-column mode. Most of the library code is compiled into the LOWCODE segment, as an implemented the VBXE banking window is at $4000-6000.  This can cause problems if the origin of your code is higher in memory and overlaps this area.  If you need a different VBXE banking window, you can change the source code and recompile the library.
 
+<b>Compiling</b>
+
+I've only included a Windows batch file to compile the library.  Run this and it will compile the library and the vbxeconio.o file needed.  If someone wants to contribute a proper Makefile for Linux based systems, please do!
+
 <b>Usage</b>
 
 Compile with the .o file and the library to use the VBXE overlay which will replace all conio library functions with VBXE versions.
